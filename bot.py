@@ -21,4 +21,4 @@ async def on_message(message):
 
   print(message.author)
 
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv('DISCORD_TOKEN'))
