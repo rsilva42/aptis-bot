@@ -20,5 +20,7 @@ async def on_message(message):
     return
 
   print(message.author)
+  if message.content == '!hello':
+    await message.channel.send('Hey! how\'s it going, ' + client.user.name + ' here!')
 
 client.run(os.getenv('DISCORD_TOKEN'))
